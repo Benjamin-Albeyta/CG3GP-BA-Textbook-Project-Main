@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4795653235148411800}
   - component: {fileID: 3058283232503141150}
   - component: {fileID: 5865945018870393292}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011934795173131494}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Weapon rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,6 +150,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996000868721690425, guid: a2d2da1303e5bee4bb33903ba21b4b95,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176521679627899909, guid: a2d2da1303e5bee4bb33903ba21b4b95,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4954759305946127222, guid: a2d2da1303e5bee4bb33903ba21b4b95,
         type: 3}
@@ -245,6 +255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flying Enemy Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185820334237077319, guid: a2d2da1303e5bee4bb33903ba21b4b95,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

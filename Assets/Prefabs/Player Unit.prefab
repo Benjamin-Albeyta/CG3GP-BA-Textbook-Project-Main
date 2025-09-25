@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326909471198509922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5757601683772390140}
   - component: {fileID: 3420240854900380131}
   - component: {fileID: 5038495943845523782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hat Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 7828849656417508969}
   - component: {fileID: 3613667211445977689}
   - component: {fileID: 799632676396965298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hat Brim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7201809895123747515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shoot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,10 @@ GameObject:
   - component: {fileID: 7477308935330155494}
   - component: {fileID: 8490206372297478338}
   - component: {fileID: 4413400358967039803}
-  m_Layer: 0
+  - component: {fileID: 6237484406400428936}
+  - component: {fileID: 4665665525163914807}
+  - component: {fileID: 5915475982884659347}
+  m_Layer: 6
   m_Name: Player Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,9 +392,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.4084005
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2042003, z: 0}
 --- !u!114 &8490206372297478338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,8 +421,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ca9b7fcebc26e4aa54f9e9cb707e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4926999319831382534, guid: dba577bd8dd265943b032dbe2a2ab8e3, type: 3}
+  prefab: {fileID: 8106396875423086645, guid: 4902e46fb68241d47ab90701dd2fd1b2, type: 3}
   shootPoint: {fileID: 4651512393894904318}
+--- !u!114 &6237484406400428936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805366694646759698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 786a11366580ff44a947cc09ff60968e,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!54 &4665665525163914807
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805366694646759698}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 10
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!114 &5915475982884659347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805366694646759698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f17f46ada3359a4dbcf2043ea8b1177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 100
 --- !u!1 &5856224092654627543
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +506,7 @@ GameObject:
   - component: {fileID: 669046083696573426}
   - component: {fileID: 7557048296786318731}
   - component: {fileID: 6810406106712873548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
