@@ -8,8 +8,17 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Ch6.unity
     guid: b2f2ad4bc86601e4da5d6a0c48e03f18
+  - enabled: 1
+    path: Assets/Scenes/Test Ch7 8 9.unity
+    guid: 9d7e37f269e5a8d48a18145827587544
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: afae21066cc89bb4db9ef94312a28a25
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: ae89d3fdedc63564a8b78a8c284de3a2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
