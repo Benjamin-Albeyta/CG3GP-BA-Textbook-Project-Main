@@ -381,7 +381,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805366694646759698}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 748a40123258d0c4595ca9c4821d667a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -409,8 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24c6d039259217f4ba58f28a23c9e130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotateSpeed: 150
+  speed: 1000
+  rotateSpeed: 125
 --- !u!114 &4413400358967039803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ Rigidbody:
   m_GameObject: {fileID: 4805366694646759698}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -481,7 +481,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &5915475982884659347
 MonoBehaviour:
@@ -511,8 +511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ffd733edd93054ea0d5d907a5366fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 75
   playerBody: {fileID: 4827859805980348648}
+  cameraTransform: {fileID: 5730670517433489707}
 --- !u!1 &5856224092654627543
 GameObject:
   m_ObjectHideFlags: 0
