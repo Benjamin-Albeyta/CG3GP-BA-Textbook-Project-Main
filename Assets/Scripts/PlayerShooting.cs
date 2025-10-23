@@ -9,12 +9,16 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject shootPoint;
 
+    public ParticleSystem muzzleEffect;
+
     public void OnFire()
     {
-            GameObject clone = Instantiate(prefab);
+        GameObject clone = Instantiate(prefab);
 
-            clone.transform.position = shootPoint.transform.position;
-            clone.transform.rotation = shootPoint.transform.rotation;
+        clone.transform.position = shootPoint.transform.position;
+        clone.transform.rotation = shootPoint.transform.rotation;
+
+        muzzleEffect.Play();
     }
 
 
