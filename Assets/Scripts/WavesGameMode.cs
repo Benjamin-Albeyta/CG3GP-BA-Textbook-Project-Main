@@ -15,6 +15,7 @@ public class WavesGameMode : MonoBehaviour
         WavesManager.instance.waves.Count <= 0)
         {
             SceneManager.LoadScene("WinScreen");
+            Debug.Log("Win Screen Triggered");
         }
     }
 
@@ -22,6 +23,7 @@ public class WavesGameMode : MonoBehaviour
     void OnPlayerOrBaseDied()
     {
         SceneManager.LoadScene("LoseScreen");
+        Debug.Log("Lose Screen triggered");
     }
 
     // Start is called before the first frame update
