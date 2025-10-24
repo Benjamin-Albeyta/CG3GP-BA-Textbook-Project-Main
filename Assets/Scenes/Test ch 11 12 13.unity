@@ -5857,7 +5857,7 @@ PrefabInstance:
     - target: {fileID: 1368358399000370020, guid: 6867504b891da0646bc08066aa498b05,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.82
+      value: 100.99
       objectReference: {fileID: 0}
     - target: {fileID: 1368358399000370020, guid: 6867504b891da0646bc08066aa498b05,
         type: 3}
@@ -6106,7 +6106,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -10700,7 +10700,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397674793}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
@@ -22144,7 +22144,7 @@ PrefabInstance:
     - target: {fileID: 1342572495335357067, guid: 87c47610eb89b2f47b1a01a12a1fbc96,
         type: 3}
       propertyPath: enemies.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1342572495335357067, guid: 87c47610eb89b2f47b1a01a12a1fbc96,
         type: 3}

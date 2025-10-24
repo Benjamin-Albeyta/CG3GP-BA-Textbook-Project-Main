@@ -11,6 +11,7 @@ public class WavesGameMode : MonoBehaviour
 
     void CheckWinCondition()
     {
+        Debug.Log("CheckWinCondition called enemies left: " + EnemyManager.instance.enemies.Count + " Waves left: " + WavesManager.instance.waves.Count);
         if (EnemyManager.instance.enemies.Count <= 0 &&
         WavesManager.instance.waves.Count <= 0)
         {
