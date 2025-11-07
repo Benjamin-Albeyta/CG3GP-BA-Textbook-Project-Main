@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 3ba5df55de38cf04d86504dab0da7464
+AssetOrigin:
+  serializedVersion: 1
+  productId: 288965
+  packageName: Lowpoly Cowboy RIO
+  packageVersion: 1.1
+  assetPath: Assets/VertexModeler/CowboyRIO/Mesh/CowboyRio_Unity.fbx
+  uploadId: 705475
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -21,8 +28,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -899,7 +904,7 @@ ModelImporter:
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
+  autoGenerateAvatarMappingIfUnspecified: 0
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
@@ -910,10 +915,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 288965
-  packageName: Lowpoly Cowboy RIO
-  packageVersion: 1.1
-  assetPath: Assets/VertexModeler/CowboyRIO/Mesh/CowboyRio_Unity.fbx
-  uploadId: 705475

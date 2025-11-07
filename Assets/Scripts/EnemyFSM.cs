@@ -22,16 +22,21 @@ public class EnemyFSM : MonoBehaviour
 
     public ParticleSystem muzzleEffect;
 
+    Animator animator;
+
 
     private void Awake()
     {
         baseTransform = GameObject.Find("Base").transform;
         agent = GetComponentInParent<UnityEngine.AI.NavMeshAgent>();
+        animator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (agent == null || !agent.isActiveAndEnabled || !agent.isOnNavMesh)
+            return;
         if (currentState == EnemyState.GoToBase) { GoToBase(); }
         else if (currentState == EnemyState.AttackBase) { AttackBase(); }
         else if (currentState == EnemyState.ChasePlayer) { ChasePlayer(); }
@@ -51,6 +56,7 @@ public class EnemyFSM : MonoBehaviour
 
     void GoToBase()
     {
+        animator.SetBool("Shooting", false);
         agent.isStopped = false;
         agent.SetDestination(baseTransform.position);
         if (sightSensor.detectedObject != null)
@@ -75,7 +81,7 @@ public class EnemyFSM : MonoBehaviour
     public float playerAttackDistance;
     void ChasePlayer()
     {
-
+        animator.SetBool("Shooting", true);
         agent.isStopped = false;
 
         if (sightSensor.detectedObject == null)
@@ -122,6 +128,7 @@ public class EnemyFSM : MonoBehaviour
             return;
             
         lastShootTime = Time.time;
+        animator.SetBool("Shooting", true);
         Instantiate(bulletPrefab, transform.position, transform.rotation);
         muzzleEffect.Play();
         

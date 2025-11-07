@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -14,8 +15,21 @@ public class PlayerShooting : MonoBehaviour
     public AudioSource shootSound;
 
     public int bulletsAmount;
+    public int fireRate;
 
-    public void OnFire()
+    public void OnFire(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            InvokeRepeating("Shoot", fireRate, fireRate);
+        }
+        else
+        {
+            CancelInvoke();
+        }
+    }
+
+    private void Shoot()
     {
         if (bulletsAmount > 0 && Time.timeScale > 0)
         {
@@ -29,7 +43,6 @@ public class PlayerShooting : MonoBehaviour
             shootSound.Play();
             muzzleEffect.Play();
         }
-
     }
 
 }
