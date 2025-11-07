@@ -11,15 +11,25 @@ public class PlayerShooting : MonoBehaviour
 
     public ParticleSystem muzzleEffect;
 
+    public AudioSource shootSound;
+
+    public int bulletsAmount;
+
     public void OnFire()
     {
-        GameObject clone = Instantiate(prefab);
+        if (bulletsAmount > 0 && Time.timeScale > 0)
+        {
+            bulletsAmount--;
 
-        clone.transform.position = shootPoint.transform.position;
-        clone.transform.rotation = shootPoint.transform.rotation;
+            GameObject clone = Instantiate(prefab);
 
-        muzzleEffect.Play();
+            clone.transform.position = shootPoint.transform.position;
+            clone.transform.rotation = shootPoint.transform.rotation;
+
+            shootSound.Play();
+            muzzleEffect.Play();
+        }
+
     }
-
 
 }
