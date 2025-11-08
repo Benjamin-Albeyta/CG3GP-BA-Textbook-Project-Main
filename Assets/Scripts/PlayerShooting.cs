@@ -16,9 +16,16 @@ public class PlayerShooting : MonoBehaviour
 
     public int bulletsAmount;
     public int fireRate;
+    Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     public void OnFire(InputValue value)
     {
+        animator.SetBool("Shooting", value.isPressed);
         if (value.isPressed)
         {
             InvokeRepeating("Shoot", fireRate, fireRate);
@@ -31,6 +38,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
+        
         if (bulletsAmount > 0 && Time.timeScale > 0)
         {
             bulletsAmount--;

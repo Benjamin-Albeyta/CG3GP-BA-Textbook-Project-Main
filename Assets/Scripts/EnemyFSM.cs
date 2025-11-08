@@ -21,6 +21,7 @@ public class EnemyFSM : MonoBehaviour
     public GameObject bulletPrefab;
 
     public ParticleSystem muzzleEffect;
+    public AudioSource shootSound;
 
     Animator animator;
 
@@ -131,6 +132,7 @@ public class EnemyFSM : MonoBehaviour
         animator.SetBool("Shooting", true);
         Instantiate(bulletPrefab, transform.position, transform.rotation);
         muzzleEffect.Play();
+        shootSound.Play();
         
     }
 

@@ -7,6 +7,8 @@ If all enemies are defeated then there will be a circle for a victory screen, if
 - Basic AI will avoid the hole in the center of the area
 - Basic area and texture design implemented
 - Basic imported 3D models implemented
-- Attached animations to 3D models (Note: didn't include animations for main character as with the first person camera when I did it just obstructed game view; however enemies are using the same layout and they have animations)
-If this isn't good I will change it before the next version of the assignment
-To look at all these aspects more in depth, can simply view the scene.
+- Attached animations to 3D models
+- Completely changed the camera to use the cinemachine
+- Added dynamic camera intro
+- Added pause screen
+To look at all these aspects more in depth, can simply view the scene / play
